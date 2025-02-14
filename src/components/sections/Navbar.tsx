@@ -7,14 +7,17 @@ import { AnimatePresence, motion } from "motion/react";
 
 const elMessiri = El_Messiri({
     variable: '--font-messiri',
-    weight: '400'
+    weight: '400',
+    subsets:['latin']
 })
 const ubuntu = Ubuntu({
-    weight: '300' 
+    weight: '300',
+    subsets:['latin']
 })
 
 const inter = Inter({
     variable: '--font-inter',
+    subsets:['latin']
 })
 const navLinks = [
     {label: "Home", section: 'home'},

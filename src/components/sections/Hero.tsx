@@ -10,7 +10,7 @@ import ieteLogo from '@/assets/ieteLogo.png';
 import ieeeLogo from '@/assets/image.png';
 import { ArrowDown, Mouse } from "lucide-react";
 
-const elMessiri = El_Messiri({ style: "normal" });
+const elMessiri = El_Messiri({ style: "normal", subsets:['latin'] });
 
 export const Hero = () => {
     return (
