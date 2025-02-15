@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/next";
 
 
 
@@ -16,7 +15,6 @@ export default function RootLayout({
 }>) {
   return (
     <>
-    <Analytics />
     <html lang="en">
       <body
         className={`antialiased text-white bg-[#050020] h-screen`}

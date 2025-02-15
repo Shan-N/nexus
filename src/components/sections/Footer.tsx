@@ -50,10 +50,9 @@ export const Footer = () => {
         <div className="px-4 py-8 sm:px-6 lg:px-8 backdrop-blur-lg">
           <ul className="mx-auto flex flex-wrap max-w-6xl justify-center gap-6 md:gap-8 lg:gap-12">
             {[
-              { href: "/compliance/privacypolicy", text: "Privacy Policy" },
-              { href: "/compliance/termsandconditions", text: "Terms and Conditions" },
-              { href: "/compliance/cancelationandrefund", text: "Cancellation and Refund" },
-              { href: "/compliance/shippinganddelivery", text: "Shipping and Delivery" },
+              { href: "/compliance/privacy", text: "Privacy Policy" },
+              { href: "/compliance/terms", text: "Terms and Conditions" },
+              { href: "/compliance/shipping", text: "Shipping and Delivery" },
               { href: "/compliance/contact", text: "Contact Us" },
             ].map((link, index) => (
               <motion.li key={index} whileHover="hover" variants={linkVariants}>
