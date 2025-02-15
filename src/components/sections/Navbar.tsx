@@ -66,15 +66,15 @@ export const Navbar = () => {
             </svg>
           </div>
           </div>
-        <div className='flex flex-col md:hidden'>
-          <div className={twMerge('pb-5 z-10')}>
+        <div className='flex flex-col md:hidden w-full backdrop-blur rounded-2xl'>
+          <div className={twMerge('z-10')}>
         <AnimatePresence>
           {isOpen && (
             <motion.div
               initial={{ height: 0 }}
               animate={{ height: 'auto' }}
               exit={{ height: 0 }}
-              className='flex flex-col items-center overflow-hidden'
+              className='flex flex-col items-center overflow-hidden pb-5'
             >
               {navLinks.map((link, index) =>
                 link.label === 'SUPPORT US' ? (

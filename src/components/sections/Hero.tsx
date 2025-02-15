@@ -9,31 +9,51 @@ import etsaLogo from '@/assets/etsaLogo.png';
 import ieteLogo from '@/assets/ieteLogo.png';
 import ieeeLogo from '@/assets/image.png';
 import { ArrowDown, Mouse } from "lucide-react";
+import { useState, useEffect } from "react";
 
 const elMessiri = El_Messiri({ style: "normal", subsets:['latin'] });
 
 export const Hero = () => {
+    const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+    
+      useEffect(() => {
+        const updateDimensions = () => {
+          setDimensions({
+            width: window.innerWidth,
+            height: window.innerHeight,
+          });
+        };
+    
+        updateDimensions();
+    
+        window.addEventListener("resize", updateDimensions);
+    
+        return () => window.removeEventListener("resize", updateDimensions);
+      }, []);
     return (
         <main>
-            <section className="relative overflow-hidden">
-                <Image src={bgImage1} alt="bgImage1" priority className="absolute inset-0 -z-40 object-cover" />
-                <div className="flex flex-col justify-center items-center pt-20 md:pt-60 lg:pt-72">
-                    <motion.span 
+            <section className="relative flex flex-col items-center overflow-hidden">
+                <div className="absolute bottom-0 z-10 h-full w-full"></div>
+                <Image src={bgImage1} alt="bgImage1" priority className="absolute object-cover -z-40 left-0 w-full h-full" 
+                 width={dimensions.width}
+                />
+                <div className="flex flex-col w-full justify-center items-center pt-32 md:pt-60 lg:pt-72">
+                    <motion.h1 
                         initial={{ opacity: 0, y: 50 }} 
                         animate={{ opacity: 1, y: 0 }} 
                         transition={{ duration: 0.8 }}
-                        className={twMerge(elMessiri.className, 'font-semibold text-5xl md:text-7xl lg:text-9xl')}
+                        className={twMerge(elMessiri.className, 'font-semibold text-6xl md:text-7xl lg:text-9xl')}
                     >
                         NEXUS &apos;25
-                    </motion.span>
-                    <motion.span 
+                    </motion.h1>
+                    <motion.h2 
                         initial={{ opacity: 0, y: 50 }} 
                         animate={{ opacity: 1, y: 0 }} 
                         transition={{ duration: 1, delay: 0.3 }}
-                        className={twMerge(elMessiri.className, 'text-xs py-1 md:text-lg lg:text-xl')}
+                        className={twMerge(elMessiri.className, 'text-sm py-1 md:text-lg lg:text-xl')}
                     >
                         The Ultimate Tech Convergence!
-                    </motion.span>
+                    </motion.h2>
 
                     <motion.div 
                         className="flex justify-center items-center gap-2 md:gap-4 md:pt-5 lg:pt-16"
@@ -53,7 +73,7 @@ export const Hero = () => {
                     </motion.div>
 
                     <motion.div 
-                        className="hidden md:inline-flex border rounded-full p-1 mt-1 lg:mt-28 md:p-3 opacity-75"
+                        className="hidden md:inline-flex border rounded-full p-1 mt-1 md:mt-10 lg:mt-28 md:p-3 opacity-75"
                         animate={{ y: [0, 2, 0] }}
                         transition={{ duration: 1.5, repeat: Infinity }}
                     >
@@ -65,6 +85,7 @@ export const Hero = () => {
                     >
                         <ArrowDown className="size-4 md:size-8 opacity-75 mt-8 md:mt-1" />
                     </motion.div>
+                    <div className="pb-36 md:pb-12"></div>
                 </div>
             </section>
         </main>
