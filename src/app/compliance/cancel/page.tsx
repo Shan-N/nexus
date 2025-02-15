@@ -1,6 +1,6 @@
 
 
-export const Cancel = () => {
+export default function Cancel() {
     return (
         <main>
             <section>
