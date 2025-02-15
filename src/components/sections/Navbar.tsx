@@ -31,7 +31,7 @@ export const Navbar = () => {
         <>
         <div className="hidden md:flex justify-center items-center fixed top-0 py-6 z-50 max-w-7xl left-1/2 transfrom -translate-x-1/2">
             <nav className="flex justify-between items-center gap-28 lg:gap-48 px-4 py-3 bg-white/5 rounded-full backdrop-blur sticky">
-                <a className={twMerge('text-xl font-extralight px-4', elMessiri.className)}>Nexus</a>
+                <a className={twMerge('text-xl font-extralight px-4 cursor-pointer', elMessiri.className)}>Nexus</a>
                 <div className="flex gap-10">
                 {navLinks.map((link) => {
                    return( <a className={twMerge(ubuntu.className,'cursor-pointer')} key={link.label}>{link.label}</a> )
