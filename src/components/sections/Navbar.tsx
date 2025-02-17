@@ -36,9 +36,13 @@ export const Navbar = forwardRef<HTMLDivElement , NavbarProps>(({
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const scrollToSection = (section: keyof typeof sectionRef) => {
-    sectionRef[section]?.current?.scrollIntoView({ behavior: 'smooth' });
-    setIsOpen(false);
+  const scrollToSection = async(section: keyof typeof sectionRef) => {
+    try {
+      sectionRef[section]?.current?.scrollIntoView({ behavior: 'smooth' });
+    } catch (error) {
+      console.error(error);
+    }
+
   }
 
   return (
