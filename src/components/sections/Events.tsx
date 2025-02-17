@@ -10,7 +10,11 @@ import { motion } from "framer-motion"
 
 const inter = Inter({ subsets: ["latin"] })
 
-export const Events = () => {
+export const Events = ({
+  sectionRef
+}:{
+  sectionRef: React.RefObject<HTMLDivElement | null>
+}) => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -30,7 +34,7 @@ export const Events = () => {
   }
 
   return (
-    <section>
+    <section ref={sectionRef}>
       <motion.div
         className="relative flex justify-center items-center pt-20"
         initial={{ opacity: 0, y: -20 }}
@@ -40,12 +44,12 @@ export const Events = () => {
         <Image
           src={eventsDiv || "/placeholder.svg"}
           alt=""
-          className="object-cover absolute rounded-3xl h-28 px-4 md:h-36 md:rounded-[3.5rem] md:px-10 py-4 -z-20 opacity-65 shadow-neon-purple"
+          className="object-cover absolute rounded-3xl h-28 md:h-36 md:rounded-[3.5rem] my-4 -z-20 opacity-65 shadow-neon-purple"
         />
         <h2 className={twMerge("text-3xl font-semibold tracking-wide", inter.className)}>Events</h2>
       </motion.div>
       <motion.div
-        className="flex flex-col md:flex-row md:px-10"
+        className="flex flex-col md:flex-row lg:px-44 md:px-10"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -72,7 +76,7 @@ export const Events = () => {
         </motion.div>
       </motion.div>
       <motion.div
-        className="pb-96 flex flex-col md:flex-row md:px-10"
+        className="pb-20 flex flex-col md:flex-row lg:px-44 md:px-10"
         variants={containerVariants}
         initial="hidden"
         animate="visible"

@@ -41,7 +41,7 @@ export const EventCard = (props: EventCards) => {
           <Image
             src={posterImg || "/placeholder.svg"}
             alt={title}
-            className="h-full md:h-[500px] object-cover rounded-t-3xl"
+            className="h-[300px] md:h-[400px] md:w-full object-cover rounded-t-3xl"
           />
           <div
             className={twMerge(

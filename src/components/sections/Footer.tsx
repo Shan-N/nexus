@@ -4,7 +4,11 @@ import Link from "next/link"
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
 
-export const Footer = () => {
+export const Footer = ({
+  sectionRef
+}:{
+  sectionRef: React.RefObject<HTMLDivElement | null>
+}) => {
   const footerDiv = useRef(null);
   const isInView = useInView(footerDiv, { once: false });
 
@@ -38,7 +42,7 @@ export const Footer = () => {
   }
 
   return (
-    <footer className="relative bg-cover bg-top bg-no-repeat overflow-hidden">
+    <footer className="relative bg-cover bg-top bg-no-repeat overflow-hidden" ref={sectionRef}>
       <div ref={footerDiv} className="mt-16">
         <motion.div
           initial="hidden"

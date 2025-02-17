@@ -13,8 +13,13 @@ import { useState, useEffect } from "react";
 
 const elMessiri = El_Messiri({ style: "normal", subsets:['latin'] });
 
-export const Hero = () => {
+export const Hero = ({
+    sectionRef
+}: {
+    sectionRef: React.RefObject<HTMLDivElement | null>
+}) => {
     const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+
     
       useEffect(() => {
         const updateDimensions = () => {
@@ -31,7 +36,7 @@ export const Hero = () => {
         return () => window.removeEventListener("resize", updateDimensions);
       }, []);
     return (
-        <main>
+        <main ref={sectionRef}>
             <section className="relative flex flex-col items-center overflow-hidden">
                 <div className="absolute bottom-0 z-10 h-full w-full"></div>
                 <Image src={bgImage1} alt="bgImage1" priority className="absolute object-cover -z-40 left-0 w-full h-full" 
