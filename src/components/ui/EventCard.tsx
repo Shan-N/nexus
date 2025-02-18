@@ -70,7 +70,8 @@ export const EventCard = (props: EventCards) => {
       </motion.div>
 
       <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
-        <DialogContent className={twMerge('rounded-2xl flex', inter.className)}>
+        <DialogContent className={twMerge('rounded-2xl', inter.className)}>
+          <div className="flex gap-10">
           <DialogHeader>
             <DialogTitle className="text-3xl">{title}</DialogTitle>
             <DialogDescription className="text-sm text-left py-4 flex flex-col gap-6 md:gap-28">
@@ -80,14 +81,17 @@ export const EventCard = (props: EventCards) => {
                 <span className="text-sm font-light block pt-2" key={coordinators}>{coordinators}</span>
               ))}
               </div>
-              <a className="bg-neutral-600 py-2 w-32 text-center rounded-full">Event Rules</a>
             </DialogDescription>
           </DialogHeader>
-          <div className="mt-4 justify-center flex flex-col gap-16 md:gap-20 items-right">
-            <Image src={posterImg || "/placeholder.svg"} alt={title} className="size-52 aspect-square object-cover rounded-lg" />
-            <a className="cursor-pointer" target="__blank" href={googleLink}>
-            <Button className="bg-purple-600 rounded-2xl px-10 font-semibold">Register</Button>
-            </a>
+          {/* <div className="mt-4 gap-16 md:gap-20 items-right">
+            <Image src={posterImg || "/placeholder.svg"} alt={title} className="size-60 aspect-square ob rounded-lg" />
+          </div> */}
+          </div>
+          <div className="flex justify-between">
+          <a className="bg-neutral-600 py-2 px-4 text-center text-sm rounded-full">Event Rules</a>
+          <a className="cursor-pointer" target="__blank" href={googleLink}>
+          <Button className="bg-purple-600 rounded-2xl px-10 font-semibold">Register</Button>
+          </a>
           </div>
         </DialogContent>
       </Dialog>
