@@ -39,7 +39,7 @@ export const Events = ({
   return (
     <section ref={sectionRef}>
       <motion.div
-        className="relative flex justify-center items-center pt-20"
+        className="relative flex justify-center items-center pt-20 w-full"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -47,7 +47,7 @@ export const Events = ({
         <Image
           src={eventsDiv || "/placeholder.svg"}
           alt=""
-          className="object-cover absolute rounded-3xl h-28 md:h-36 md:rounded-[3.5rem] my-4 -z-20 opacity-65 shadow-neon-purple"
+          className="object-cover absolute rounded-3xl h-28 md:h-36 md:rounded-[3.5rem] w-[21rem] md:w-[65rem] mx-4 my-4 -z-20 opacity-65 shadow-[0_0_20px_10px_rgba(147,51,234,0.35)]"
         />
         <h2 className={twMerge("text-3xl font-semibold tracking-wide", inter.className)}>Events</h2>
       </motion.div>
@@ -78,6 +78,7 @@ export const Events = ({
             posterImg={hardHack}
             explanation="Rotor X is an exciting drone-making workshop where participants learn about the principles of flight, electronics, and robotics while building their own functional drone."
             coordinators={["Mayank Gangrediwar", "Kaushal Lawande" ,"Harshal Lohokare"]}
+            googleLink="https://yorbot.in/"
           />
         </motion.div>
       </motion.div>
@@ -114,4 +115,3 @@ export const Events = ({
     </section>
   )
 }
-

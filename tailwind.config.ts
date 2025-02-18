@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       boxShadow: {
-        'neon-purple': '0px 4px 15px rgba(139, 92, 246, 0.8)', // Adjust the color and blur to your liking
+        'neon-purple': '0 0 15px 5px rgba(147, 51, 234, 0.5)', // Adjust the color and blur to your liking
       },
     }
   },
