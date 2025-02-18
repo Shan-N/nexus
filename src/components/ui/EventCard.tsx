@@ -20,10 +20,11 @@ interface EventCards {
   posterImg: StaticImageData
   explanation?: string
   googleLink?: string
+  coordinators?: string[]
 }
 
 export const EventCard = (props: EventCards) => {
-  const { title, tag1, tag2, description, posterImg, explanation, googleLink } = props
+  const { title, tag1, tag2, description, posterImg, explanation, googleLink, coordinators } = props
   const [isModalOpen, setIsModalOpen] = useState(false)
   const mainRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(mainRef, { once: true })
@@ -61,7 +62,7 @@ export const EventCard = (props: EventCards) => {
                 </span>
               </div>
             </div>
-            <div className="flex justify-center items-end">
+            <div className="flex justify-center items-end w-36 py-4">
               <p className="text-sm font-light">{description}</p>
             </div>
           </div>
@@ -69,15 +70,21 @@ export const EventCard = (props: EventCards) => {
       </motion.div>
 
       <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
-        <DialogContent className={twMerge('rounded-2xl', inter.className)}>
+        <DialogContent className={twMerge('rounded-2xl flex', inter.className)}>
           <DialogHeader>
             <DialogTitle className="text-3xl">{title}</DialogTitle>
-            <DialogDescription className="text-sm">
-              {explanation || "No additional information available for this event."}
+            <DialogDescription className="text-sm text-left py-4 flex flex-col gap-6 md:gap-28">
+              <div>
+              <span>{explanation || "No additional information available for this event."}</span>
+              {coordinators?.map((coordinators => 
+                <span className="text-sm font-light block pt-2" key={coordinators}>{coordinators}</span>
+              ))}
+              </div>
+              <a className="bg-neutral-600 py-2 w-32 text-center rounded-full">Event Rules</a>
             </DialogDescription>
           </DialogHeader>
-          <div className="mt-4 justify-center flex flex-col gap-4 items-center">
-            <Image src={posterImg || "/placeholder.svg"} alt={title} className="size-64 object-cover rounded-lg" />
+          <div className="mt-4 justify-center flex flex-col gap-16 md:gap-20 items-right">
+            <Image src={posterImg || "/placeholder.svg"} alt={title} className="size-52 aspect-square object-cover rounded-lg" />
             <a className="cursor-pointer" target="__blank" href={googleLink}>
             <Button className="bg-purple-600 rounded-2xl px-10 font-semibold">Register</Button>
             </a>

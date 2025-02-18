@@ -49,7 +49,7 @@ export const Events = ({
         <h2 className={twMerge("text-3xl font-semibold tracking-wide", inter.className)}>Events</h2>
       </motion.div>
       <motion.div
-        className="flex flex-col md:flex-row lg:px-44 md:px-10"
+        className="flex flex-col md:flex-row lg:px-52 md:px-10"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -62,6 +62,7 @@ export const Events = ({
             title="Rotor X"
             posterImg={soloNotSolo}
             explanation="Rotor X is an exciting drone-making workshop where participants learn about the principles of flight, electronics, and robotics while building their own functional drone."
+            coordinators={["Harish Patil", "Ayush Benade" ,"Nimisha Halabe"]}
           />
         </motion.div>
         <motion.div variants={itemVariants}>
@@ -69,14 +70,15 @@ export const Events = ({
             description="We created a digital website for ABCD to help revolutionise the journey of tech solutions."
             tag1="Drone Making"
             tag2="Hands-on"
-            title="Rotor X"
+            title="Hardware Hackathon"
             posterImg={soloNotSolo}
             explanation="Rotor X is an exciting drone-making workshop where participants learn about the principles of flight, electronics, and robotics while building their own functional drone."
+            coordinators={["Mayank Gangrediwar", "Kaushal Lawande" ,"Harshal Lohokare"]}
           />
         </motion.div>
       </motion.div>
       <motion.div
-        className="pb-20 flex flex-col md:flex-row lg:px-44 md:px-10"
+        className="pb-20 flex flex-col md:flex-row lg:px-52 md:px-10"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -86,9 +88,10 @@ export const Events = ({
             description="We created a digital website for ABCD to help revolutionise the journey of tech solutions."
             tag1="Drone Making"
             tag2="Hands-on"
-            title="Rotor X"
+            title="Solo Not Solo"
             posterImg={soloNotSolo}
             explanation="Rotor X is an exciting drone-making workshop where participants learn about the principles of flight, electronics, and robotics while building their own functional drone."
+            coordinators={["Risha Chopra", "Arpita Sutar" ,"Eshal Shaikh"]}
           />
         </motion.div>
         <motion.div variants={itemVariants}>
@@ -96,9 +99,10 @@ export const Events = ({
             description="We created a digital website for ABCD to help revolutionise the journey of tech solutions."
             tag1="Drone Making"
             tag2="Hands-on"
-            title="Rotor X"
+            title="Latent Show"
             posterImg={soloNotSolo}
             explanation="Rotor X is an exciting drone-making workshop where participants learn about the principles of flight, electronics, and robotics while building their own functional drone."
+            coordinators={["Riddhi Kulkarni", "Shruti Badgujar" ,"Arya Gavasane"]}
           />
         </motion.div>
       </motion.div>
