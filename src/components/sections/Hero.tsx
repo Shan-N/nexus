@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import bgImage1 from '@/assets/bgImage1.png';
+import bgImage1 from '@/assets/bgImage2.png';
 import { twMerge } from "tailwind-merge";
 import { El_Messiri } from "next/font/google";
 import pccoeLogo from '@/assets/pccoeLogo.png';
