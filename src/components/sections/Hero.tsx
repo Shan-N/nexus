@@ -9,7 +9,7 @@ import etsaLogo from '@/assets/etsaLogo.png';
 import ieteLogo from '@/assets/ieteLogo.png';
 import ieeeLogo from '@/assets/image.png';
 import pccoeLogo2 from '@/assets/pccoe2Logo.png';
-import { ArrowDown, Mouse } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const elMessiri = El_Messiri({ style: "normal", subsets:['latin'] });
@@ -64,7 +64,7 @@ export const Hero = ({
                         initial={{ opacity: 0, y: 50 }} 
                         animate={{ opacity: 1, y: 0 }} 
                         transition={{ duration: 0.8 }}
-                        className={twMerge(elMessiri.className, 'font-semibold text-6xl md:text-7xl lg:text-9xl')}
+                        className={twMerge(elMessiri.className, 'font-semibold text-6xl md:text-7xl lg:text-9xl tracking-wide')}
                     >
                         NEXUS &apos;25
                     </motion.h1>
@@ -76,7 +76,7 @@ export const Hero = ({
                     >
                         The Ultimate Tech Convergence!
                     </motion.h2>
-                    <span className={twMerge('pt-6 md:pt-10 text-xs md:text-xl font-extralight tracking-wide', elMessiri.className)}>Technical Sponsors</span>
+                    <span className={twMerge('pt-6 md:pt-10 text-xs md:text-xl font-extralight tracking-wider', elMessiri.className)}>Technical Sponsors</span>
                     <motion.div 
                         className="flex justify-center items-center gap-4 md:gap-6 md:pt- lg:pt"
                         initial={{ opacity: 0, scale: 0.8 }} 
@@ -94,16 +94,17 @@ export const Hero = ({
                         ))}
                     </motion.div>
 
-                    <motion.div 
+                    {/* <motion.div 
                         className="hidden md:inline-flex border rounded-full p-1 mt-1 md:mt-10 lg:mt-28 md:p-3 opacity-75"
                         animate={{ y: [0, 2, 0] }}
                         transition={{ duration: 1.5, repeat: Infinity }}
                     >
                         <Mouse className="size-4 md:size-8" />
-                    </motion.div>
+                    </motion.div> */}
                     <motion.div
                         animate={{ y: [0, 2, 0] }}
                         transition={{ duration: 1.5, repeat: Infinity }}
+                        className="mt-1 md:mt-10 lg:mt-28"
                     >
                         <ArrowDown className="size-4 md:size-8 opacity-75 mt-8 md:mt-1" />
                     </motion.div>

@@ -40,7 +40,7 @@ export default function Countdown() {
 
   return (
       <div className={twMerge("flex flex-col gap-10 justify-center items-center w-full px-4",leagueSpartan.className)}>
-        <h2 className="text-xl md:text-2xl font-semibold">NEXUS&apos;25</h2>
+        <h2 className="text-2xl md:text-4xl font-semibold">NEXUS&apos;25</h2>
         <CardContent>
           <div className="grid grid-cols-4 gap-4 text-center">
             {Object.entries(timeLeft).map(([unit, value]) => (

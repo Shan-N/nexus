@@ -7,6 +7,7 @@ import { useRef, useState } from "react"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog"
 import { Button } from "./button"
 import { motion, useInView } from "framer-motion"
+import { ArrowRight } from "lucide-react"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -46,7 +47,7 @@ export const EventCard = (props: EventCards) => {
           />
           <div
             className={twMerge(
-              "flex flex-row justify-between gap-10 md:gap-20 px-4 py-3 bg-white/5 backdrop-blur-xl rounded-b-3xl",
+              "flex flex-row justify-between gap-10 px-4 py-3 bg-white/5 backdrop-blur-xl rounded-b-3xl",
               inter.className,
             )}
           >
@@ -61,9 +62,12 @@ export const EventCard = (props: EventCards) => {
                   {tag2}
                 </span>
               </div>
-            </div>
-            <div className="flex justify-center items-end w-36 py-4">
+              <div className=" py-4">
               <p className="text-sm font-light">{description}</p>
+            </div>
+            </div>
+            <div className="flex justify-center items-center md:px-2">
+              <ArrowRight className="size-8" />
             </div>
           </div>
         </div>

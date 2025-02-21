@@ -16,7 +16,7 @@ export const Glimpses = ({
 }) => {
     return (
         <section ref={sectionRef} className="flex flex-col justify-center items-center gap-5 pb-10 pt-4 overflow-hidden">
-            <span className={twMerge('text-xl font-semibold tracking-wide',inter.className)}>Glimpes &apos;24</span>
+            <span className={twMerge('text-2xl md:text-4xl font-semibold tracking-wide',inter.className)}>Glimpes &apos;24</span>
             <Carousel>
                 <div className="flex">
                 <CarouselContent>
