@@ -22,10 +22,11 @@ interface EventCards {
   explanation?: string
   googleLink?: string
   coordinators?: string[]
+  eventRules?: string;
 }
 
 export const EventCard = (props: EventCards) => {
-  const { title, tag1, tag2, description, posterImg, explanation, googleLink, coordinators } = props
+  const { title, tag1, tag2, description, posterImg, explanation, googleLink, coordinators, eventRules } = props
   const [isModalOpen, setIsModalOpen] = useState(false)
   const mainRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(mainRef, { once: true })
@@ -81,9 +82,12 @@ export const EventCard = (props: EventCards) => {
             <DialogDescription className="text-sm text-left py-4 flex flex-col gap-6 md:gap-28">
               <div>
               <span>{explanation || "No additional information available for this event."}</span>
+              <div className="text-sm py-4">
+                <span className="font-semibold">Coordinators :</span>
               {coordinators?.map((coordinators => 
                 <span className="text-sm font-light block pt-2" key={coordinators}>{coordinators}</span>
               ))}
+              </div>
               </div>
             </DialogDescription>
           </DialogHeader>
@@ -92,7 +96,7 @@ export const EventCard = (props: EventCards) => {
           </div> */}
           </div>
           <div className="flex justify-between">
-          <a className="bg-neutral-600 py-2 px-4 text-center text-sm rounded-full">Event Rules</a>
+          <a target="__blank" href={eventRules} className="bg-neutral-600 py-2 px-4 text-center text-sm rounded-full">Event Rules</a>
           <a className="cursor-pointer" target="__blank" href={googleLink}>
           <Button className="bg-purple-600 rounded-2xl px-10 font-semibold">Register</Button>
           </a>

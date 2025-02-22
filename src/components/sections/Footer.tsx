@@ -56,7 +56,7 @@ export const Footer = ({
             {[
               { href: "/compliance/privacy", text: "Privacy Policy" },
               { href: "/compliance/terms", text: "Terms and Conditions" },
-              { href: "/compliance/shipping", text: "Shipping and Delivery" },
+              // { href: "/compliance/shipping", text: "Shipping and Delivery" },
               { href: "/compliance/contact", text: "Contact Us" },
             ].map((link, index) => (
               <motion.li key={index} whileHover="hover" variants={linkVariants}>

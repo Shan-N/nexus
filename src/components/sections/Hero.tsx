@@ -78,7 +78,7 @@ export const Hero = ({
                     </motion.h2>
                     <span className={twMerge('pt-6 md:pt-10 text-xs md:text-xl font-extralight tracking-wider', elMessiri.className)}>Technical Sponsors</span>
                     <motion.div 
-                        className="flex justify-center items-center gap-4 md:gap-6 md:pt- lg:pt"
+                        className="flex justify-center items-center pt-4 gap-4 md:gap-6 md:pt-8"
                         initial={{ opacity: 0, scale: 0.8 }} 
                         animate={{ opacity: 1, scale: 1 }} 
                         transition={{ duration: 0.8, delay: 0.6 }}

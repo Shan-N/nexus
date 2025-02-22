@@ -67,6 +67,7 @@ export const Events = ({
             explanation="Rotor X is an exciting drone-making workshop where participants learn about the principles of flight, electronics, and robotics while building their own functional drone."
             coordinators={["Harish Patil", "Ayush Benade" ,"Nimisha Halabe"]}
             googleLink="https://tinyurl.com/etsaRotor"
+            eventRules="https://docs.google.com/document/d/1UWRYXnXxrhtgXI1EQcuFw5sHFDVxJEk6/edit?usp=sharing&ouid=117214772839008485950&rtpof=true&sd=true"
           />
         </motion.div>
         <motion.div variants={itemVariants}>
@@ -79,6 +80,7 @@ export const Events = ({
             explanation="Rotor X is an exciting drone-making workshop where participants learn about the principles of flight, electronics, and robotics while building their own functional drone."
             coordinators={["Mayank Gangrediwar", "Kaushal Lawande" ,"Harshal Lohokare"]}
             googleLink="https://yorbot.in/"
+            eventRules="https://drive.google.com/file/d/1-97kJVScGKmMgLKPhH0H8p6b9JoZ6g8T/view?usp=sharing"
           />
         </motion.div>
       </motion.div>
@@ -90,14 +92,15 @@ export const Events = ({
       >
         <motion.div variants={itemVariants}>
           <EventCard
-            description="We created a digital website for ABCD to help revolutionise the journey of tech solutions."
+            description="Solo Not Solo: Start alone, get teamed up, tackle challenges, and finish strong together!"
             tag1="Matchmaking"
             tag2="Non-Tech"
             title="Solo Not Solo"
             posterImg={soloNotSolo}
-            explanation="Rotor X is an exciting drone-making workshop where participants learn about the principles of flight, electronics, and robotics while building their own functional drone."
+            explanation='"Solo Not Solo" is a team-based challenge where participants register individually and are later grouped into teams. The event consists of three rounds designed to test problem-solving, communication, and teamwork.'
             coordinators={["Risha Chopra", "Arpita Sutar" ,"Eshal Shaikh"]}
             googleLink="https://tinyurl.com/etsaSNS"
+            eventRules="https://drive.google.com/file/d/1nQFlhEDg9dURTulyeM0CEmtjmPcwOchE/view?usp=sharing"
           />
         </motion.div>
         <motion.div variants={itemVariants}>
@@ -105,10 +108,12 @@ export const Events = ({
             description="We created a digital website for ABCD to help revolutionise the journey of tech solutions."
             tag1="Brainrot"
             tag2="Non-Tech"
-            title="Latent Show"
+            title="PCCOE&apos;s Got Talent"
             posterImg={latentShow}
             explanation="Rotor X is an exciting drone-making workshop where participants learn about the principles of flight, electronics, and robotics while building their own functional drone."
             coordinators={["Riddhi Kulkarni", "Shruti Badgujar" ,"Arya Gavasane"]}
+            googleLink="https://tinyurl.com/etsaLatent"
+            eventRules="https://docs.google.com/document/d/19vny6KmiIRENIj6muc715BhU38nLAG9g/edit?usp=sharing&ouid=117214772839008485950&rtpof=true&sd=true"
           />
         </motion.div>
       </motion.div>

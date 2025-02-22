@@ -38,7 +38,7 @@ export const Team = ({
     return(
     <section ref={sectionRef}>
         <div className="flex flex-col px-4 md:px-6">
-            <span className={twMerge('text-2xl font-semibold', inter.className)}>Made by</span>
+            <span className={twMerge('text-2xl font-semibold', inter.className)}>Developer Credits</span>
             <div className="flex flex-col md:flex-row py-4 gap-2 w-56 md:w-[30rem]">
             {teamMembers.map((member,i) => 
             <Badge key={i} className="px-1 bg-gray-600/40 py-2 rounded-full max-w-md"><TeamMem name={member.name} insta={member.insta} git={member.git} linkd={member.linkd} /></Badge>
