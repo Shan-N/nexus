@@ -1,27 +1,27 @@
 [
     {
-        "name": "test",
-        "Image": "/sponsor/1.png",
+        "name": "Chips",
+        "Image": "/sponsors/chips.jpg",
         "link" : "#"
     },
     {
-        "name": "test",
-        "Image": "/sponsor/1.png",
+        "name": "cad cafe",
+        "Image": "/sponsors/cad.jpg",
         "link" : "#"
     },
     {
-        "name": "test",
-        "Image": "/sponsor/1.png",
+        "name": "loreal",
+        "Image": "/sponsors/loreal.jpg",
         "link" : "#"
     },
     {
-        "name": "test",
-        "Image": "/sponsor/1.png",
+        "name": "yorlot",
+        "Image": "/sponsors/logo.png",
         "link" : "#"
     },
     {
-        "name": "test",
-        "Image": "/sponsor/1.png",
+        "name": "rane",
+        "Image": "/sponsors/rane.jpg",
         "link" : "#"
     }
 ]

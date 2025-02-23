@@ -3,10 +3,10 @@
 import { Inter } from "next/font/google"
 import { twMerge } from "tailwind-merge"
 import { EventCard } from "../ui/EventCard"
-import soloNotSolo from "@/assets/solonotsolo.png"
-import rotorX from '@/assets/rotorX.png';
-import hardHack from '@/assets/hardHack.png';
-import latentShow from '@/assets/latentShow.png';
+import soloNotSolo from "@/assets/3.png"
+import rotorX from '@/assets/1.png';
+import hardHack from '@/assets/2.png';
+import latentShow from '@/assets/4.png';
 import { motion } from "framer-motion"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -43,9 +43,10 @@ export const Events = ({
         transition={{ duration: 0.5 }}
       >
         <video
-          src='https://res.cloudinary.com/dl4tccguh/video/upload/v1740218750/eventsBg.mp4'
+          src='/eventsBg.mp4'
           className="object-cover absolute rounded-3xl h-28 md:h-36 md:rounded-[3.5rem] w-[21rem] md:w-[65rem] mx-4 my-4 -z-20 opacity-85 shadow-[0_0_20px_10px_rgba(147,51,234,0.35)]"
           autoPlay
+          loop
         />
         <h2 className={twMerge("text-3xl font-semibold tracking-wide", inter.className)}>Events</h2>
       </motion.div>
@@ -70,12 +71,12 @@ export const Events = ({
         </motion.div>
         <motion.div variants={itemVariants}>
           <EventCard
-            description="RotorX: A 2-day hands-on drone workshop covering flight basics, assembly, applications, and a final presentation."
+            description="Hardware Hackathon: Innovate, build, and showcase groundbreaking robotic solutions to real-world challenges with skill and creativity!"
             tag1="Hardware"
             tag2="Tech"
             title="Hardware Hackathon"
             posterImg={hardHack}
-            explanation="Rotor X is an exciting drone-making workshop where participants learn about the principles of flight, electronics, and robotics while building their own functional drone."
+            explanation="The Electronics and Telecommunication Students Association (ETSA), in collaboration with Yorbot, presents an exciting Hardware Hackathon at Pimpri Chinchwad College of Engineering on 7th March! Compete in teams of 3-5 members, showcase innovative robotics solutions, and win prizes worth ₹50,000. Get hands-on experience, expert guidance, and the opportunity to build and present your project. Register now and unleash your creativity! 💡🔥"
             coordinators={["Mayank Gangrediwar", "Kaushal Lawande" ,"Harshal Lohokare"]}
             googleLink="https://yorbot.in/"
             eventRules="https://drive.google.com/file/d/1-97kJVScGKmMgLKPhH0H8p6b9JoZ6g8T/view?usp=sharing"
@@ -98,7 +99,7 @@ export const Events = ({
             explanation='"Solo Not Solo" is a team-based challenge where participants register individually and are later grouped into teams. The event consists of three rounds designed to test problem-solving, communication, and teamwork.'
             coordinators={["Risha Chopra", "Arpita Sutar" ,"Eshal Shaikh"]}
             googleLink="https://tinyurl.com/etsaSNS"
-            eventRules="https://drive.google.com/file/d/1nQFlhEDg9dURTulyeM0CEmtjmPcwOchE/view?usp=sharing"
+            eventRules="https://drive.google.com/file/d/17yHs7XgW_Jk6g0YHhTG8gjmAqJTt9h3W/view?usp=sharing"
           />
         </motion.div>
         <motion.div variants={itemVariants}>

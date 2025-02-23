@@ -8,15 +8,8 @@
   right: 0;
 }
 
-* {
-  -webkit-user-select: none;
-  /* Chrome all / Safari all */
-  -moz-user-select: none;
-  /* Firefox all */
-  -ms-user-select: none;
-  /* IE 10+ */
-  user-select: none;
-  /* Likely future */
+*{
+  box-sizing: content-box !important;
 }
 
 main .solar_systm .planet, main input[type=radio][name=planet]::after, main .overlay {

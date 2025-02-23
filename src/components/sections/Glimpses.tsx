@@ -2,9 +2,12 @@ import { twMerge } from "tailwind-merge";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
 import { Inter } from "next/font/google";
 import Image from "next/image";
-import wholeTeam from '@/assets/wholeTeam.png';
-import clapTeam from '@/assets/clapTeam.png';
-import festX from '@/assets/festX.png';
+import wholeTeam from '@/assets/festX2.jpg';
+import clapTeam from '@/assets/festX3.jpg';
+import autoExpo from '@/assets/festX4.jpg'
+import teamInSuits from '@/assets/festX5.jpg'
+import fareWell from '@/assets/festX6.jpg';
+import festX from '@/assets/festX1.jpg'
 
 const inter = Inter({
     subsets: ["latin"]
@@ -20,11 +23,12 @@ export const Glimpses = ({
             <Carousel>
                 <div className="flex">
                 <CarouselContent>
+                    <CarouselItem><Image src={festX} alt="" className="size-60 md:size-[30rem] object-cover aspect-square" priority /></CarouselItem>
                     <CarouselItem><Image src={wholeTeam} alt="" className="size-60 md:size-[30rem] object-cover aspect-square" priority /></CarouselItem>
                     <CarouselItem><Image src={clapTeam} alt="" className="size-60 md:size-[30rem] object-cover aspect-square" priority /></CarouselItem>
-                    <CarouselItem><Image src={festX} alt="" className="size-60 md:size-[30rem] object-cover aspect-square" priority /></CarouselItem>
-                    {/* <CarouselItem><Image src={} alt="" /></CarouselItem> */}
-                    {/* <CarouselItem><Image src={} alt="" /></CarouselItem> */}
+                    <CarouselItem><Image src={autoExpo} alt="" className="size-60 md:size-[30rem] object-cover aspect-square" priority /></CarouselItem>
+                    <CarouselItem><Image src={fareWell} alt="" className="size-60 md:size-[30rem] object-cover aspect-square" priority /></CarouselItem>
+                    <CarouselItem><Image src={teamInSuits} alt="" className="size-60 md:size-[30rem] object-cover aspect-square" priority /></CarouselItem>
                 </CarouselContent>
                 </div>
                 <div className="flex justify-center items-center gap-6 md:gap-16 pt-10 md:pt-20">

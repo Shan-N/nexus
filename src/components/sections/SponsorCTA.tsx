@@ -14,7 +14,7 @@ export const SponsorCTA = () => {
         <motion.div
           animate={{ translateX: "-50%" }}
           transition={{
-            duration: 20, // Slower duration for smoother movement
+            duration: 10, // Slower duration for smoother movement
             repeat: Number.POSITIVE_INFINITY,
             ease: "linear",
             repeatType: "loop",
@@ -28,7 +28,7 @@ export const SponsorCTA = () => {
                         <Image
                             src={item.Image || "/placeholder.svg"}
                             alt={item.name}
-                            className="size-14 aspect-square"
+                            className="size-20 aspect-square object-contain"
                             width={300}
                             height={300}
                         />
