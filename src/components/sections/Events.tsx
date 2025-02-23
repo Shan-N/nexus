@@ -1,7 +1,5 @@
 "use client"
 
-import Image from "next/image"
-import eventsDiv from "@/assets/eventsDiv.png"
 import { Inter } from "next/font/google"
 import { twMerge } from "tailwind-merge"
 import { EventCard } from "../ui/EventCard"
@@ -44,10 +42,10 @@ export const Events = ({
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <Image
-          src={eventsDiv || "/placeholder.svg"}
-          alt=""
-          className="object-cover absolute rounded-3xl h-28 md:h-36 md:rounded-[3.5rem] w-[21rem] md:w-[65rem] mx-4 my-4 -z-20 opacity-65 shadow-[0_0_20px_10px_rgba(147,51,234,0.35)]"
+        <video
+          src='https://res.cloudinary.com/dl4tccguh/video/upload/v1740218750/eventsBg.mp4'
+          className="object-cover absolute rounded-3xl h-28 md:h-36 md:rounded-[3.5rem] w-[21rem] md:w-[65rem] mx-4 my-4 -z-20 opacity-85 shadow-[0_0_20px_10px_rgba(147,51,234,0.35)]"
+          autoPlay
         />
         <h2 className={twMerge("text-3xl font-semibold tracking-wide", inter.className)}>Events</h2>
       </motion.div>
@@ -59,7 +57,7 @@ export const Events = ({
       >
         <motion.div variants={itemVariants}>
           <EventCard
-            description="We created a digital website for ABCD to help revolutionise the journey of tech solutions."
+            description="RotorX: A 2-day hands-on drone workshop covering flight basics, assembly, applications, and a final presentation."
             tag1="Drone Making"
             tag2="Tech"
             title="Rotor X"
@@ -72,7 +70,7 @@ export const Events = ({
         </motion.div>
         <motion.div variants={itemVariants}>
           <EventCard
-            description="We created a digital website for ABCD to help revolutionise the journey of tech solutions."
+            description="RotorX: A 2-day hands-on drone workshop covering flight basics, assembly, applications, and a final presentation."
             tag1="Hardware"
             tag2="Tech"
             title="Hardware Hackathon"
