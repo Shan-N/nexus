@@ -115,9 +115,9 @@ export const Events = ({
             Unfiltered, an electrifying talent showcase! This event is a one-of-a-kind platform where 
             students from PCCOE and beyond can display their hidden talents, including singing, 
             dancing, magic, comedy, poetry, beat boxing, and much more!"
-            coordinators={[{name:'Riddhi Kulkarni', contact:'7875029291'}, {name:'', contact:'8856927697'}, {name:'Arya Gavsane', contact:'9356770591'}]}
+            coordinators={[{name:'Riddhi Kulkarni', contact:'7875029291'}, {name:'Shruti Badgujar', contact:'8459634766'}, {name:'Arya Gavsane', contact:'9356770591'}]}
             googleLink="https://tinyurl.com/etsaLatent"
-            eventRules="https://docs.google.com/document/d/19vny6KmiIRENIj6muc715BhU38nLAG9g/edit?usp=sharing&ouid=117214772839008485950&rtpof=true&sd=true"
+            eventRules="https://drive.google.com/file/d/1h_LrQim4n7rgdFJ9_GsS6v8uFI4rOVr3/view?usp=sharing"
           />
         </motion.div>
       </motion.div>
