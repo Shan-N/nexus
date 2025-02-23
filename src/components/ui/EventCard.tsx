@@ -13,6 +13,11 @@ const inter = Inter({
   subsets: ["latin"],
 })
 
+interface Coordinator {
+  name: string;
+  contact: string;
+}
+
 interface EventCards {
   title: string
   tag1: string
@@ -21,12 +26,13 @@ interface EventCards {
   posterImg: StaticImageData
   explanation?: string
   googleLink?: string
-  coordinators?: string[]
+  coordinators?: Coordinator[];
   eventRules?: string;
+  className?: string;
 }
 
 export const EventCard = (props: EventCards) => {
-  const { title, tag1, tag2, description, posterImg, explanation, googleLink, coordinators, eventRules } = props
+  const { title, tag1, tag2, description, posterImg, explanation, googleLink, coordinators, eventRules, className } = props
   const [isModalOpen, setIsModalOpen] = useState(false)
   const mainRef = useRef<HTMLDivElement>(null);
   const isInView = useInView(mainRef, { once: true })
@@ -63,7 +69,7 @@ export const EventCard = (props: EventCards) => {
                   {tag2}
                 </span>
               </div>
-              <div className=" py-4">
+              <div className={twMerge("py-4",className)}>
               <p className="text-sm font-light">{description}</p>
             </div>
             </div>
@@ -85,7 +91,9 @@ export const EventCard = (props: EventCards) => {
               <div className="text-sm py-4">
                 <span className="font-semibold">Coordinators :</span>
               {coordinators?.map((coordinators => 
-                <span className="text-sm font-light block pt-2" key={coordinators}>{coordinators}</span>
+                <>
+                <span className="text-sm font-light block pt-2" key={coordinators.name}>{coordinators.name}: {coordinators.contact}</span>
+                </>
               ))}
               </div>
               </div>

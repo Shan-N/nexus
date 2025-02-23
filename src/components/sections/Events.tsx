@@ -59,28 +59,29 @@ export const Events = ({
       >
         <motion.div variants={itemVariants}>
           <EventCard
-            description="RotorX: A 2-day hands-on drone workshop covering flight basics, assembly, applications, and a final presentation."
+            description="Rotor X: A 2-day hands-on drone workshop covering flight basics, assembly, applications, and a final presentation."
             tag1="Drone Making"
             tag2="Tech"
             title="Rotor X"
             posterImg={rotorX}
             explanation="Rotor X is an exciting drone-making workshop where participants learn about the principles of flight, electronics, and robotics while building their own functional drone."
-            coordinators={["Harish Patil", "Ayush Benade" ,"Nimisha Halabe"]}
+            coordinators={[{name:'Harish Patil', contact:'8767559134'}, {name:'Aayush Benade', contact:'8856927697'}, {name:'Nimisha Halabe', contact:'9028401706'}]}
             googleLink="https://tinyurl.com/etsaRotor"
             eventRules="https://docs.google.com/document/d/1UWRYXnXxrhtgXI1EQcuFw5sHFDVxJEk6/edit?usp=sharing&ouid=117214772839008485950&rtpof=true&sd=true"
           />
         </motion.div>
         <motion.div variants={itemVariants}>
           <EventCard
-            description="Hardware Hackathon: Innovate, build, and showcase groundbreaking robotic solutions to real-world challenges with skill and creativity!"
+            description="Hardware Hackathon: Innovate, build, and create groundbreaking robotic solutions to real-world challenges with skill, passion, and creativity!"
             tag1="Hardware"
             tag2="Tech"
             title="Hardware Hackathon"
             posterImg={hardHack}
             explanation="The Electronics and Telecommunication Students Association (ETSA), in collaboration with Yorbot, presents an exciting Hardware Hackathon at Pimpri Chinchwad College of Engineering on 7th March! Compete in teams of 3-5 members, showcase innovative robotics solutions, and win prizes worth ₹50,000. Get hands-on experience, expert guidance, and the opportunity to build and present your project. Register now and unleash your creativity! 💡🔥"
-            coordinators={["Mayank Gangrediwar", "Kaushal Lawande" ,"Harshal Lohokare"]}
+            coordinators={[{name:'Kaushal Lawande', contact:'7385139399'}, {name:'Mayank Gangrediwar', contact:'7276379674'}, {name:'Harshal Lohokare', contact:'9552451968'}]}
             googleLink="https://yorbot.in/"
             eventRules="https://drive.google.com/file/d/1-97kJVScGKmMgLKPhH0H8p6b9JoZ6g8T/view?usp=sharing"
+            className=""
           />
         </motion.div>
       </motion.div>
@@ -98,20 +99,23 @@ export const Events = ({
             title="Solo Not Solo"
             posterImg={soloNotSolo}
             explanation='"Solo Not Solo" is a team-based challenge where participants register individually and are later grouped into teams. The event consists of three rounds designed to test problem-solving, communication, and teamwork.'
-            coordinators={["Risha Chopra", "Arpita Sutar" ,"Eshal Shaikh"]}
+            coordinators={[{name:'Risha Chopra', contact:'8087115878'}, {name:'Arpita Sutar', contact:'9421449314'}, {name:'Eshal Shaikh', contact:'9325010694'}]}
             googleLink="https://tinyurl.com/etsaSNS"
             eventRules="https://drive.google.com/file/d/17yHs7XgW_Jk6g0YHhTG8gjmAqJTt9h3W/view?usp=sharing"
           />
         </motion.div>
         <motion.div variants={itemVariants}>
           <EventCard
-            description="We created a digital website for ABCD to help revolutionise the journey of tech solutions."
+            description="Raw and Unfiltered: Perform anything, start solo or group up, and let your talent shine freely!"
             tag1="Brainrot"
             tag2="Non-Tech"
-            title="PCCOE&apos;s Got Talent"
+            title="Raw & Unfiltered"
             posterImg={latentShow}
-            explanation="Rotor X is an exciting drone-making workshop where participants learn about the principles of flight, electronics, and robotics while building their own functional drone."
-            coordinators={["Riddhi Kulkarni", "Shruti Badgujar" ,"Arya Gavasane"]}
+            explanation="Pimpri Chinchwad College of Engineering (PCCOE) is proud to present Raw and 
+            Unfiltered, an electrifying talent showcase! This event is a one-of-a-kind platform where 
+            students from PCCOE and beyond can display their hidden talents, including singing, 
+            dancing, magic, comedy, poetry, beat boxing, and much more!"
+            coordinators={[{name:'Riddhi Kulkarni', contact:'7875029291'}, {name:'', contact:'8856927697'}, {name:'Arya Gavsane', contact:'9356770591'}]}
             googleLink="https://tinyurl.com/etsaLatent"
             eventRules="https://docs.google.com/document/d/19vny6KmiIRENIj6muc715BhU38nLAG9g/edit?usp=sharing&ouid=117214772839008485950&rtpof=true&sd=true"
           />
