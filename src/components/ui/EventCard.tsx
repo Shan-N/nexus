@@ -90,9 +90,9 @@ export const EventCard = (props: EventCards) => {
               <span>{explanation || "No additional information available for this event."}</span>
               <div className="text-sm py-4">
                 <span className="font-semibold">Coordinators :</span>
-              {coordinators?.map((coordinators => 
+              {coordinators?.map(((coordinators,i) => 
                 <>
-                <span className="text-sm font-light block pt-2" key={coordinators.name}>{coordinators.name}: {coordinators.contact}</span>
+                <span className="text-sm font-light block pt-2" key={i}>{coordinators.name}: {coordinators.contact}</span>
                 </>
               ))}
               </div>
