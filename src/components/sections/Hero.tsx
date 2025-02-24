@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import bgImage1 from '@/assets/bgImage2.png';
 import { twMerge } from "tailwind-merge";
 import { El_Messiri } from "next/font/google";
+import { Roboto } from "next/font/google";
 import pccoeLogo from '@/assets/pccoeLogo.png';
 import etsaLogo from '@/assets/etsaLogo.png';
 import ieteLogo from '@/assets/ieteLogo.png';
@@ -13,6 +14,7 @@ import { ArrowDown } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const elMessiri = El_Messiri({ style: "normal", subsets:['latin'] });
+const roboto = Roboto({ weight: '400' ,subsets:['latin'] });
 
 export const Hero = ({
     sectionRef
@@ -60,6 +62,24 @@ export const Hero = ({
                             </motion.div>
                         ))}
                     </motion.div>
+                    <div className="flex flex-col justify-center items-center gap-2 pb-3">
+                    <motion.span
+                        initial={{ opacity: 0, y: 50 }} 
+                        animate={{ opacity: 1, y: 0 }} 
+                        transition={{ duration: 0.8 }}
+                        className={twMerge(roboto.className, 'text-sm font-light tracking-wider')}
+                    >
+                        Pimpri Chinchwad College of Engineering
+                    </motion.span>
+                    <motion.span
+                        initial={{ opacity: 0, y: 50 }} 
+                        animate={{ opacity: 1, y: 0 }} 
+                        transition={{ duration: 0.8 }}
+                        className={twMerge(roboto.className, 'text-xs font-light tracking-wider text-center')}
+                    >
+                        Department of Electronics and Telecommunication Presents
+                    </motion.span>
+                    </div>
                     <motion.h1 
                         initial={{ opacity: 0, y: 50 }} 
                         animate={{ opacity: 1, y: 0 }} 
