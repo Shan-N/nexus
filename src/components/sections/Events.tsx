@@ -77,7 +77,7 @@ export const Events = ({
             tag2="Tech"
             title="Hardware Hackathon"
             posterImg={hardHack}
-            explanation="The Electronics and Telecommunication Students Association (ETSA), in collaboration with Yorbot, presents an exciting Hardware Hackathon at Pimpri Chinchwad College of Engineering on 7th March! Compete in teams of 3-5 members, showcase innovative robotics solutions, and win prizes worth ₹50,000. Get hands-on experience, expert guidance, and the opportunity to build and present your project. Register now and unleash your creativity! 💡🔥"
+            explanation="The Electronics and Telecommunication Students Association (ETSA), in collaboration with Yorbot, presents an exciting Hardware Hackathon at Pimpri Chinchwad College of Engineering on 7th March! Compete in teams of 2-5 members, showcase innovative robotics solutions, and win prizes worth ₹50,000. Get hands-on experience, expert guidance, and the opportunity to build and present your project. Register now and unleash your creativity! 💡🔥"
             coordinators={[{name:'Kaushal Lawande', contact:'7385139399'}, {name:'Mayank Gangrediwar', contact:'7276379674'}, {name:'Harshal Lohokare', contact:'9552451968'}]}
             googleLink="https://yorbot.in/"
             eventRules="https://drive.google.com/file/d/1-97kJVScGKmMgLKPhH0H8p6b9JoZ6g8T/view?usp=sharing"
